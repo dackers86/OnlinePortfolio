@@ -1,7 +1,5 @@
-require 'sinatra'
+require 'sinatra/base'
 
-get "/" do
-  "Hello World!"
-end
+Dir.glob('./public/{helpers,controllers}/*.rb').each { |file| require file }
 
-run Sinatra::Application.run!
+map('/') { run HomeController }
