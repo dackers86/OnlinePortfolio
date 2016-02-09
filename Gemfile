@@ -4,4 +4,5 @@ ruby "2.2.3"
 
 gem "passenger"
 gem "sinatra"
-gem "shotgun"
+gem "rspec"
+gem "rack-test"

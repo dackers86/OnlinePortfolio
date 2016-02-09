@@ -1,4 +1,4 @@
-require 'sinatra/base'
+require 'sinatra'
 
 Dir.glob('./app/{helpers,controllers}/*.rb').each { |file| require file }
 
