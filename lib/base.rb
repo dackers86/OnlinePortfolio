@@ -7,7 +7,7 @@ module OnlinePortfolio
 
     set :views, File.expand_path('../../views', __FILE__)
     set :public_folder, File.expand_path('../../../public', __FILE__)
-    set :base_route, "/"
+    set :base_route, ""
 
     configure :production, :development do
       enable :logging
