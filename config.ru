@@ -1,5 +1,13 @@
-require 'sinatra'
+$LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
 
-Dir.glob('./app/{helpers,controllers}/*.rb').each { |file| require file }
+require "bundler"
+require "sinatra"
+require "app"
 
-map('/') { run HomeController }
+run OnlinePortfolio::AuthApp
+
+# require 'sinatra'
+
+# Dir.glob('./app/{helpers,controllers}/*.rb').each { |file| require file }
+
+# map('/') { run HomeController }
