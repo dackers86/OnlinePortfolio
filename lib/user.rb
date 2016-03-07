@@ -5,10 +5,10 @@ class User
   attr_accessor :image
 
   def self.from_omniauth(auth)
-      new_user = User.new
-      new_user.uid = auth.uid
-      new_user.image  = auth.info.image
-      new_user
+    new_user = User.new
+    new_user.uid = auth.uid
+    new_user.image  = auth.info.image
+    new_user
   end
 
 

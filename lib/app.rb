@@ -1,3 +1,4 @@
+require "./lib/main_app"
 require "./lib/auth_app"
 
 module OnlinePortfolio
@@ -10,6 +11,7 @@ module OnlinePortfolio
       def mappings
         {
           AuthApp.application_route => AuthApp,
+          MainApp.application_route => MainApp,
         }
       end
     end
