@@ -13,6 +13,6 @@ module OnlinePortfolio
       enable :logging
     end
 
-    use Rack::Session::Cookie
+    use Rack::Session::Cookie, key: "onlineportfolio", secret: "changeme"
   end
 end
