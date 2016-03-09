@@ -10,9 +10,10 @@ gem 'omniauth-twitter'
 gem 'pry'
 gem "activerecord"
 gem "pg"
+gem "rake"
+gem "sinatra-activerecord"
 
 group :test do
-  gem "sinatra"
   gem "rspec"
   gem "capybara"
   gem "capybara-webkit"

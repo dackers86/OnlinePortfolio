@@ -1,5 +1,3 @@
-require_relative "../../spec_helper"
-
 describe "homepage", type: :feature do
 
   describe "when noty authenticated" do
@@ -9,7 +7,7 @@ describe "homepage", type: :feature do
         visit "/"
       end
 
-      it "should show the homepage" do
+      it "should show the login page" do
         expect(page.body).to include("Twitter")
       end
     end
