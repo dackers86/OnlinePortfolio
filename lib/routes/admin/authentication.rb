@@ -12,6 +12,7 @@ module OnlinePortfolio
         end
 
         get '/logout' do
+          session["current_user"] = nil
           redirect '/'
         end
       end
