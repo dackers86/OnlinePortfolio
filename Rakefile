@@ -10,6 +10,9 @@ namespace :db do
   end
 end
 
-RSpec::Core::RakeTask.new :spec
+begin
+  RSpec::Core::RakeTask.new :spec
 
-task :default => [:spec]
+  task :default => [:spec]
+rescue LoadError
+end

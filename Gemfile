@@ -20,3 +20,8 @@ group :test do
   gem "selenium-webdriver"
   gem "show_me_the_cookies"
 end
+
+
+group :production do
+
+end
