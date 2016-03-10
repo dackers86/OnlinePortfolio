@@ -12,9 +12,10 @@ gem "activerecord"
 gem "pg"
 gem "rake"
 gem "sinatra-activerecord"
+gem "rspec"
+
 
 group :test do
-  gem "rspec"
   gem "capybara"
   gem "capybara-webkit"
   gem "selenium-webdriver"
