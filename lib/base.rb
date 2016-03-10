@@ -12,7 +12,7 @@ module OnlinePortfolio
     set :base_route, "/"
     
     register Sinatra::ActiveRecordExtension
-    set :database, Config.database
+    # set :database, Config.database
 
     
     configure :production, :development do
