@@ -8,6 +8,7 @@ module OnlinePortfolio
           encoding: "utf8",
           reconnect: true,
           database: "online_portfolio_#{env}"
+          host: localhost
         }
       end
     end
