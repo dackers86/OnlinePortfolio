@@ -7,7 +7,7 @@ module OnlinePortfolio
           adapter: "postgresql",
           encoding: "utf8",
           reconnect: true,
-          database: "online_portfolio_#{env}"
+          database: "online_portfolio_#{env}",
           host: localhost
         }
       end
